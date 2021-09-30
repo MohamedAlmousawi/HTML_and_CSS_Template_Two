@@ -84,7 +84,11 @@ header .container{
     justify-content: space-between;
     align-items: center;
     position: relative;
-}header .container::after{
+}
+header .container a{
+    margin-left: 20px;
+}
+header .container::after{
     content: "";
     width: calc(100% - 30px);
     border-top: 1px solid #939393;
@@ -165,7 +169,6 @@ header .container .nav .search{
     z-index: 3;
     line-height: 1.6;
     margin-bottom: 20px;
-    cursor: ;
 }
 .text p{
     line-height: 2;
