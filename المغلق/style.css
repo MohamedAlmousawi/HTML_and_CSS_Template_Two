@@ -78,6 +78,9 @@ header{
     position: absolute;
     left: 0%;
 }
+header.container a img{
+margin-left: 20px;
+} 
 header .container{
     min-height: 97px;
     display: flex;
