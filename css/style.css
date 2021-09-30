@@ -186,4 +186,24 @@ header .container .nav .search{
     top: 50%;
     right: 2%;
 }
+.landing ul{
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    display: flex;
+    list-style-type: none;
+    transform: translateX(-50%);
+}
+.landing ul li {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: transparent;
+    margin-left: 10px;
+}
+.landing ul .active{
+    background-color: var(--mainColor);
+    border: none;
+}
 /* End Landing */
