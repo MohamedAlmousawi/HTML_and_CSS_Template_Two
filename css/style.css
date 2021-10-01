@@ -41,7 +41,9 @@
     .landing i{
         display: none !important;
     }
-
+    .services-content{
+        display: block !important;
+    }
 }
 @media (max-width:975px){
     .services .container .services-content .content{
