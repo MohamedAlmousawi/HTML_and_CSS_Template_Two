@@ -14,7 +14,7 @@
     margin-right: auto;
 }
 
-@media (max-width: 767px){
+@media (max-width: 766px){
     header .container .nav ul{
         display: none !important;
         flex-direction: column;
@@ -40,6 +40,19 @@
     }
     .landing i{
         display: none !important;
+    }
+
+}
+@media (max-width:975px){
+    .services .container .services-content .content{
+        text-align: center;
+    display: flex;
+    flex-direction: column;
+    }
+    .services .container .services-content .content h3{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: -10px;
     }
 }
 /* Small */
@@ -85,9 +98,6 @@ header .container{
     align-items: center;
     position: relative;
 }
-header .container a{
-    margin-left: 20px;
-}
 header .container::after{
     content: "";
     width: calc(100% - 30px);
@@ -116,6 +126,7 @@ header .container .nav ul li a{
     text-decoration: none;
     color: white;
     padding: 40px 10px;
+    font-size: 14px;
 }
 header .container .nav ul li a:active,header .container .nav ul li a:hover{
     color: var(--mainColor);
@@ -210,3 +221,76 @@ header .container .nav .search{
     border: none;
 }
 /* End Landing */
+/* Start Services */
+.services{
+    height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+.services .container .largeText{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.services .container .largeText h2{
+    font-weight: normal;
+    font-size: 40px;
+    position: relative;
+}
+.services .container .largeText h2::before, .services .container .largeText h2::after{
+    content: "";
+}
+.services .container .largeText h2::before{
+    width: 68%;
+    position: absolute;
+    height: 1px;
+    border-top: 2px solid black;
+    bottom: -80%;
+    left: 16%;
+}
+.services .container .largeText h2::after{
+    width: 15px;
+    position: absolute;
+    height: 15px;
+    bottom: -95%;
+    left: 43%;
+    border-radius: 50%;
+    border: 2px solid black;
+    background: white;
+}
+.services .container .largeText p{
+
+    color:#777;
+    width: 550px;
+    max-width: 100%;
+    margin: 70px auto;
+    line-height: 2;
+}
+.services-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
+    grid-gap: 40px;
+}
+.services-content .content{
+    display: flex;
+}
+.services-content .content i{
+    margin-right: 20px;
+    font-size: 45px;
+}
+.services-content .content .words h3{
+    color: #19c8fa;
+    margin: 0  0 30px 20px;
+}
+.services-content .content .words p{
+    color: #777;
+    line-height: 1.8;
+    margin: 0 0 30px 20px;
+}
+.services-content .content .word{
+    margin-bottom: 150px;
+}
+/* End Services */
