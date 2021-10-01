@@ -44,6 +44,12 @@
     .services-content{
         display: block !important;
     }
+    .services-content .content .words p{
+        color: #777;
+        line-height: 1.8;
+        margin: 0 0 46px 0px;
+        padding: 0 21px;
+    }
 }
 @media (max-width:975px){
     .services .container .services-content .content{
@@ -52,9 +58,7 @@
     flex-direction: column;
     }
     .services .container .services-content .content h3{
-        margin-top: 15px;
-        margin-bottom: 15px;
-        margin-left: -10px;
+        margin: 30px 0 30px 0;
     }
 }
 /* Small */
@@ -289,7 +293,7 @@ header .container .nav .search{
 .services-content .content .words p{
     color: #777;
     line-height: 1.8;
-    margin: 0 0 30px 45px;
+    margin: 0 0 30px 0px !important;
 }
 .services-content .content .word{
     margin-bottom: 150px;
