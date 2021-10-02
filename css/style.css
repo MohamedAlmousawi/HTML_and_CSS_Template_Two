@@ -72,6 +72,22 @@
         margin-bottom: 50px;
     }
 }
+@media (max-width: 600px){
+    .awesome .textawesome {
+        padding: 25px 10px !important;
+    }
+    .awesome .textawesome h2{
+        font-size: 19px !important;
+        margin-bottom: 15px !important;
+    }
+    .awesome .textawesome p{
+        margin-bottom: 15px !important;
+        font-size: 13px;
+    }
+    .awesome .textawesome button{
+        font-size: 13px;
+    }
+}
 /* Small */
 
 @media (min-width: 768px){
