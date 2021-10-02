@@ -5,7 +5,6 @@
     font-family: "Open Sans", sans-serif;
     --mainColor: #19c8fa;
     --transparent-color: rgb(15 116 143 / 70%);
-    scroll-behavior: smooth;
 }
 /* Start Global Settings */
 .container{
@@ -478,3 +477,99 @@ bottom: 0% !important;
     text-decoration: none;
 }
 /* End Portifolio */
+/* Start Awesome */
+.awesome{
+    position: relative;
+}
+.awesome::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 53%)
+}
+.awesome video{
+    width: 100%;
+}
+.awesome .textawesome{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(14 136 169 / 56%);
+    width: 100%;
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+}
+.awesome .textawesome h2{
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+.awesome .textawesome p{
+    margin-bottom: 30px;
+}
+.awesome .textawesome button{
+    background-color: black;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    scroll-behavior: smooth;
+}
+/* End Awesome */
+/* Start About */
+.about{
+    min-height: 90vh;
+    padding-top: 100px;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+.about .container .largetext{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.about .container .largetext h2{
+    font-weight: normal;
+    font-size: 40px;
+    position: relative;
+}
+.about .container .largetext h2::before, .about .container .largetext h2::after{
+    content: "";
+}
+.about .container .largetext h2::before{
+    width: 68%;
+    position: absolute;
+    height: 1px;
+    border-top: 2px solid black;
+    bottom: -80%;
+    left: 16%;
+}
+.about .container .largetext h2::after{
+    width: 15px;
+    position: absolute;
+    height: 15px;
+    bottom: -95%;
+    left: 43%;
+    border-radius: 50%;
+    border: 2px solid black;
+    background: white;
+}
+.about .container .largetext p{
+
+    color:#777;
+    width: 550px;
+    max-width: 100%;
+    margin: 70px auto;
+    line-height: 2;
+}
+.about .container .largetext img{
+    position: absolute;
+    bottom: -19%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* End About */
