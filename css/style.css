@@ -54,6 +54,12 @@
     .stats .container .box{
         flex-basis: 100%;
     }
+    .quote .container q{
+        font-size: 20px !important;
+    }
+    .quote .container p{
+        font-size: 5px;
+    }
 }
 @media (max-width:975px){
     .services .container .services-content .content{
@@ -61,12 +67,20 @@
     display: flex;
     flex-direction: column;
     }
+
     .services .container .services-content .content h3{
         margin: 30px 0 30px 0;
     }
     .design .imgdesign{
         display: none;
     }
+    .subscribe .container{
+        flex-direction: column;
+    }
+    .subscribe .container p{
+        margin-top: 30px
+    }
+
 }
 @media (max-width: 1199px){
     .stats .container .box{
@@ -817,3 +831,242 @@ display: flex;
     right: 9%;
 }
 /* End Skills */
+/* Start Quote */
+.quote{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    position: relative;
+    background-image: url(../images/quote.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.quote .tranparent{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 /70%);
+    left: 0%;
+    top: 0%;
+}
+.quote .container{
+    position: relative;
+}
+.quote .container q{
+    font-size: 30px;
+    margin-bottom: 20px;
+    display: block;
+}
+.quote .container span{
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #939393;
+}
+/* End Quote */
+/* Start Pricing */
+.pricing{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+.pricing .container .largeText{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.pricing .container .largeText h2{
+    font-weight: normal;
+    font-size: 40px;
+    position: relative;
+}
+.pricing .container .largeText h2::before, .pricing .container .largeText h2::after{
+    content: "";
+}
+.pricing .container .largeText h2::before{
+    width: 68%;
+    position: absolute;
+    height: 1px;
+    border-top: 2px solid black;
+    bottom: -80%;
+    left: 16%;
+}
+.pricing .container .largeText h2::after{
+    width: 15px;
+    position: absolute;
+    height: 15px;
+    bottom: -95%;
+    left: 43%;
+    border-radius: 50%;
+    border: 2px solid black;
+    background: white;
+}
+.pricing .container .largeText p{
+
+    color:#777;
+    width: 550px;
+    max-width: 100%;
+    margin: 70px auto;
+    line-height: 2;
+}
+.pricing .container .plans {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 30px;
+}
+.pricing .container .plans .plan h3{
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.pricing .container .plans .plan span{
+    font-size: 60px;
+    font-weight: bold;
+}
+.pricing .container .plans .plan .head{
+    border-top: 1px solid #19c8fa;
+    border-bottom: 1px solid #19c8fa;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+}
+.pricing .container .plans .plan span::before{
+    content: "$";
+    position: absolute;
+    font-size: 25px;
+    font-weight: normal;
+    left: 26%;
+    top: 40%;
+}
+.pricing .container .plans .plan span::after{
+    content: "/Mo";
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    right: 17%;
+    bottom: 24%;
+}
+.pricing .container .plans .plan ul{
+    list-style: none;
+    text-align: center;
+    border-bottom: 1px solid #19c8fa;
+}
+
+.pricing .container .plans .plan ul li{
+    padding: 20px;
+    position: relative;
+}
+.pricing .container .plans .plan ul li:not(:first-of-type)::after{
+    content: "";
+    position: absolute;
+    border-top: 1px solid #19c8fa;
+    width: 58%;
+    left: 22%;
+    top: 5%;
+}
+
+.pricing .container .plans .plan .foot a{
+    padding: 20px;
+    margin: 30px auto;
+    display: block;
+    text-decoration: none;
+    color: #551A8B;
+    width: fit-content;
+    border: 1px solid #19c8fa;
+    background-color: white;
+    }
+.pricing .container .plans .plan .foot a:hover{
+    background-color: #19c8fa;
+    color:white;
+}
+.pricing .container .contactUs{
+    margin-top: 60px;
+    text-align: center;
+}
+.pricing .container .contactUs p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.pricing .container .contactUs button {
+    border: none;
+}
+.pricing .container .contactUs button a{
+    background-color: #19c8fa;
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 15px 30px;
+}
+/* End Pricing */
+/* Start Subscribe */
+.subscribe{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(../images/subscribe.jpg);
+    position: relative;
+    background-size: cover;
+}
+.subscribe:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    background-color: rgb( 0 0 0 / 50%);
+    top: 0%;
+}
+.subscribe .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.subscribe .container form{
+    width: 500px;
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    flex-basis: 45%;
+}
+.subscribe .container form i{
+    color: white;
+    left: 25px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+.subscribe .container form input{
+    background-color: transparent;
+    padding: 20px 20px 20px 60px;
+    outline: none;
+    border: 1px solid white;
+    border-right: none;
+    color: white;
+    width: calc(100% - 130px);
+}
+
+.subscribe .container form input::placeholder{
+    color: white;
+}
+.subscribe .container form button{
+    border: 1px solid white;
+    border-left: none;
+    background-color: #19c8fa;
+    color: white;
+    padding: 20px;
+    width: 130px;
+}
+.subscribe .container form button:hover{
+    cursor:pointer;
+}
+.subscribe .container p{
+    color: white;
+    line-height: 1.7;
+    position: relative;
+    flex-basis: 45%;
+}
+.div{
+    position: relative;
+}
+/* End Subscribe */
