@@ -64,13 +64,23 @@
         flex-direction: column;
         text-align: center;
     }
+    .contact .container .contact-content .second .groupf:first-of-type {
+        margin-bottom: 30px !important;
+    }
     .contact .container .contact-content .second {
         order: -1;
-        margin-bottom: 100px;
+        margin-bottom: 30px;
     }
 .contact .container .contact-content .second address{
     margin-bottom: 40px;
 }
+    .skills .box-of-skill .box-of-testimonials{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .skills .box-of-skill .box-of-testimonials img{
+        margin: 20px auto !important;
+    }
 }
 @media (max-width:975px){
     .services .container .services-content .content{
@@ -180,7 +190,7 @@ header .container::after{
     border-top: 1px solid #939393;
     position: absolute;
     bottom: -2%;
-    left: 0%;
+    left: 3%;
     z-index: -1;
 }
 
@@ -209,7 +219,7 @@ header .container .nav ul li a:active,header .container .nav ul li a:hover{
     border-bottom: 1px solid var(--mainColor);
 }
 header .container .nav .search{
-    padding: 5px 20px 5px 20px;
+    padding: 5px 6px 5px 20px;
     margin-left: 20px;
     border-left: 1px solid white;
     margin-top: -5px;
@@ -376,7 +386,8 @@ header .container .nav .search{
     position: relative;
     display: flex;
     align-items: center;
-    overflow: hidden
+    overflow: hidden;
+    background-size: cover;
 }
 .design::before{
     content: "";
