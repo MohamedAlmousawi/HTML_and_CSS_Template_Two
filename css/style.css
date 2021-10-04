@@ -60,6 +60,17 @@
     .quote .container p{
         font-size: 5px;
     }
+    .contact .container .contact-content{
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact .container .contact-content .second {
+        order: -1;
+        margin-bottom: 100px;
+    }
+.contact .container .contact-content .second address{
+    margin-bottom: 40px;
+}
 }
 @media (max-width:975px){
     .services .container .services-content .content{
@@ -1070,3 +1081,135 @@ display: flex;
     position: relative;
 }
 /* End Subscribe */
+/* Start Contact */
+.contact{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+.contact .container .largeText{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.contact .container .largeText h2{
+    font-weight: normal;
+    font-size: 40px;
+    position: relative;
+}
+.contact .container .largeText h2::before, .pricing .container .largeText h2::after{
+    content: "";
+}
+.contact .container .largeText h2::before{
+    width: 68%;
+    position: absolute;
+    height: 1px;
+    border-top: 2px solid black;
+    bottom: -80%;
+    left: 16%;
+}
+.contact .container .largeText h2::after{
+    width: 15px;
+    position: absolute;
+    height: 15px;
+    bottom: -95%;
+    left: 43%;
+    border-radius: 50%;
+    border: 2px solid black;
+    background: white;
+}
+.contact .container .largeText p{
+
+    color:#777;
+    width: 550px;
+    max-width: 100%;
+    margin: 70px auto;
+    line-height: 2;
+}
+.contact .container .contact-content{
+    display: flex;
+    justify-content: space-between;
+}
+.contact .container .contact-content form{
+    flex-basis: 70%;
+} 
+.contact .container .contact-content .second{
+    flex-basis: 25%;
+}
+.contact .container .contact-content form input,.contact .container .contact-content form textarea {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid rgb(180, 177, 177);
+    outline: none;
+}
+.contact .container .contact-content form button{
+    color: white;
+    background-color: #19c8fa;
+    padding: 20px;
+    outline: none;
+    border: none;
+    margin-left: auto;
+    display: flex;
+}
+.contact .container .contact-content .second .groupf h2{
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.contact .container .contact-content .second .groupf p{
+    color: #777;
+    line-height: 1.8;
+}
+.contact .container .contact-content .second .groupf:first-of-type{
+    margin-bottom: 100px;
+}
+.contact .container .contact-content .second .groupf .awesome1{
+    line-height: 2;
+    color: #777;
+}
+/* End Contact */
+/* Start Footer */
+footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url(../images/subscribe.jpg);
+    position: relative;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+footer::before{
+    content: "";
+    background-color: rgb(0 0 0 / 70%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+}
+footer img{
+    margin-bottom: 40px;
+}
+footer .container {
+    position: relative;
+}
+footer .container .social h3{
+    font-weight: normal;
+    font-size: 22px;
+    padding: 20px;
+    border-bottom: 1px solid white;
+    display: inline-block;
+    margin: 0 auto;
+}
+footer .container .social .iconSocial i{
+    padding: 30px 15px;
+    margin: 0 auto 30px auto;
+}
+footer .container .social span{
+    color: #19c8fa;
+    font-weight: bold;
+}
+/* End Footer */
